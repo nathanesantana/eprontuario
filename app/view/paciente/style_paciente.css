@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f200;
+  margin: 0;
+  padding: 0;
+}
+
+.text-purple {
+  color: #6A1D99;
+}
+
+.btn-purple {
+  background-color: #6A1D99;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+td, th {
+    white-space: normal;
+}
+@media (max-width: 768px) {
+    .table-responsive thead {
+      display: none;
+    }
+  
+    .table-responsive tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 10px;
+        background: #f8f9fa;
+        text-align: left;
+    }
+  
+    .table-responsive td {
+        display: block;
+        padding: 4px 0;
+        border: none;
+    }
+  
+    .table-responsive td::before {
+        content: attr(data-label) ": ";
+        font-weight: 600;
+        color: #6A1D99;
+        display: inline;
+    }
+
+    td::before {
+        content: attr(data-label) " ";
+    }
+    td:last-child::before {
+        content: "";
+    }
+    .table-responsive td:last-child{
+        text-align: left;
+    }
+  }
+
+.btn-purple:hover {
+  background-color: #8A2BE2;
+}
+.btn-purple {
+    background-color: #6A1D99;
+    color: white;
+  }
+.btn-purple:hover {
+    background-color: #8A2BE2;
+}
+
+.dataTables_info {
+  font-weight: 500;
+  color: #6A1D99; /* sua cor roxa */
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Centraliza e estiliza a paginação */
+div.dataTables_paginate {
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+}
+
+/* Estilo padrão dos botões */
+div.dataTables_paginate span a,
+div.dataTables_paginate a.paginate_button {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 4px 3px;
+  border: 1px solid #d2b4f1;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #7a3eb1;
+  background-color: #f8f2ff;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Hover */
+div.dataTables_paginate span a:hover,
+div.dataTables_paginate a.paginate_button:hover {
+  background-color: #e7d4fb;
+  border-color: #a765d1;
+}
+
+/* Botão ativo */
+div.dataTables_paginate .current {
+  background-color: #7a3eb1;
+  border-color: #7a3eb1;
+}
+
+/* Botões Anterior/Próximo */
+div.dataTables_paginate a.paginate_button.previous,
+div.dataTables_paginate a.paginate_button.next {
+  font-weight: bold;
+}
+
+.paciente-desativado {
+  opacity: 0.5;
+}
+.paciente-desativado i {
+  opacity: 5.0;
+  pointer-events: none; /* desativa os botões, se quiser */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  div.dataTables_paginate span a,
+  div.dataTables_paginate a.paginate_button {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 3px 2px;
+  }
+
+  div.dataTables_paginate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* mensagens de erro e sucesso */
+.modal-sucesso {
+  background-color: #f3e9ff;
+  color: #4b0082;
+}
+
+.modal-erro {
+  background-color: #fdecea;
+  color: #a30000;
+}
+
+.modal-sucesso .btn-outline-secondary {
+  border-color: #4b0082;
+  color: #4b0082;
+}
+
+.modal-erro .btn-outline-secondary {
+  border-color: #a30000;
+  color: #a30000;
+}
+
+.modal-sucesso .btn-outline-secondary:hover,
+.modal-erro .btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* mensagem de confirmação */
+#modalConfirmacaoCorpo {
+  background-color: #f9f5ff; /* roxo bem claro */
+  color: #3e0066;
+}
+
+.btn-confirmar {
+  background-color: #6f42c1; /* roxo Bootstrap */
+  color: white;
+  border: none;
+}
+
+.btn-confirmar:hover {
+  background-color: #5a32a3;
+}
+
+.btn-outline-secondary {
+  border-color: #bbb;
+  color: #555;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #eee;
+}

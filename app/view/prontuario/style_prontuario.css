@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+.form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
+  }
+  .text-purple {
+    color: #6A1D99;
+  }
+
+  .btn-purple {
+    background-color: #6A1D99;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .btn-purple:hover {
+    background-color: #8A2BE2;
+  }
+  .btn-purple {
+      background-color: #6A1D99;
+      color: white;
+    }
+  .btn-purple:hover {
+      background-color: #8A2BE2;
+  }
+  .ui-autocomplete {
+    z-index: 1051 !important;
+}
+#nomeProfissionalDisabled:disabled {
+  background-color: white;
+}
+/* mensagens de erro e sucesso */
+.modal-sucesso {
+  background-color: #f3e9ff;
+  color: #4b0082;
+}
+
+.modal-erro {
+  background-color: #fdecea;
+  color: #a30000;
+}
+
+.modal-sucesso .btn-outline-secondary {
+  border-color: #4b0082;
+  color: #4b0082;
+}
+
+.modal-erro .btn-outline-secondary {
+  border-color: #a30000;
+  color: #a30000;
+}
+
+.modal-sucesso .btn-outline-secondary:hover,
+.modal-erro .btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
